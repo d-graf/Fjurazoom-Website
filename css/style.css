@@ -1,0 +1,278 @@
+.header {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.navigation-main {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--project-brown);
+    color: white;
+    transition: transform 0.75s ease-in-out;
+    transform: translateX(100%);
+    z-index: 2;
+}
+
+.navigation-main.open {
+    transform: translateX(0);
+}
+
+.navigation-main > ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.navigation-main > ul li {
+    padding: 1em;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translateX(75px);
+}
+
+.navigation-main a {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-main.open li {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+}
+
+.hamburger {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+    background-color: var(--project-brown-light);
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 2;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: var(--project-brown-dark);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(to top, var(--project-brown-light), transparent);
+}
+
+.banner>.title {
+    font-family: 'Tan Pearl';
+    font-size: 7em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+}
+
+.header-section {
+    height: 9.375em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-section>h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--project-brown-dark);
+}
+
+.header-section--gallery {
+    background-color: transparent;
+}
+
+.header-section--gallery>h3 {
+    font-size: 3.5em;
+    color: var(--project-brown-dark);
+    margin: 0;
+}
+
+.section-about--img {
+    width: 100%;
+}
+
+#section-slider > .container-content {
+    padding-top: 0;
+}
+
+#section-slider-2 > .container-content {
+    padding-top: 0;
+}
+
+.mouse {
+	width: 20px;
+	height: 40px;
+	border: 2px solid white;
+	border-radius: 60px;
+	position: absolute;
+    bottom: 2em;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--project-brown);
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 20px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 20px;
+	}
+}
+
+/* Section backgrounds */
+#section-intro, #section-slider {
+    background-color: var(--project-brown-light);
+}
+
+#section-about, #section-slider-2 {
+    background-color: var(--project-brown);
+}
+
+#section-split {
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.section-split-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.section-split-content:hover > .overlay-container > .overlay-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.section-split--img-1, .section-split--img-2, .section-split--img-3 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 0 0 8em 5em;
+}
+
+.overlay-container h2 {
+    margin-bottom: 0.75em;
+}
+
+.overlay-content {
+    opacity: 0;
+    transform: translateY(75px);
+    height: 0;
+}
+
+.fill-brown {
+    height: 100%;
+    width: 100%;
+    background-color: var(--project-brown-dark);
+}
+
+.gallery-content {
+    columns: 4 200px;
+    column-gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.gallery-content div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+.gallery-content div img {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
