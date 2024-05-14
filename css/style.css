@@ -203,7 +203,7 @@
 }
 
 /* Section backgrounds */
-#section-intro, #section-slider {
+#section-intro, #section-slider, #section-agb {
     background-color: var(--project-brown-light);
 }
 
