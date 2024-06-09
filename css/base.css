@@ -42,10 +42,12 @@
   
   h1 {
     font-size: 2.5em;
+    line-height: 1.5;
   }
   
   h2 {
     font-size: 2.5em;
+    line-height: 1.5;
   }
   
   h3 {
@@ -55,7 +57,9 @@
     line-height: 1;
   }
   
-  h4 {}
+  h4 {
+
+  }
   
   p {
     line-height: 2;
@@ -78,6 +82,14 @@
     border: none;
     width: fit-content;
     text-decoration: none;
+    outline: none;
+    border: 1px solid var(--project-brown-light);
+    transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--project-brown);
 }
 
 .container-content {

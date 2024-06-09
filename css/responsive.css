@@ -4,27 +4,51 @@
     .header-section > h2 {
         font-size: 2em;
     }
+
+    :root {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 2.35em;
+    }
+
+    h2 {
+        font-size: 2.35em;
+    }
+
     h3 {
-        font-size: 3em;
+        font-size: 3.3em;
+    }
+
+    .button {
+        font-size: 1.15em;
+    }
+
+    .container-content {
+        font-size: 19px;
     }
 }
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    
-    h2 {
-        font-size: 2.5em;
+    :root {
+        font-size: 16px;
     }
 
-    .header-section > h2 {
-        font-size: 2em;
-        text-align: center;
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
     }
 
     h3 {
-        font-size: 2.5em;
+        font-size: 3.1em;
+    }
+
+    .container-content {
+        font-size: 18px;
     }
 
     .button {
@@ -74,9 +98,64 @@
 }
 
 @media (max-width: 768px) {
-    
+    :root {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.8em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+
+    .container-content {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 576px) {
+    :root {
+        font-size: 14px;
+    }
 
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .button {
+        font-size: 0.95em;
+    }
+
+    .container-content {
+        font-size: 16px;
+    }
+
+    .container {
+        padding-right: calc(var(--bs-gutter-x));
+        padding-left: calc(var(--bs-gutter-x));
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .header-section {
+        padding: 2em 1.5em 0 1.5em;
+    }
 }

@@ -203,11 +203,11 @@
 }
 
 /* Section backgrounds */
-#section-intro, #section-slider, #section-agb {
+#section-intro, #section-slider, #section-agb, #section-infos {
     background-color: var(--project-brown-light);
 }
 
-#section-about, #section-slider-2 {
+#section-about, #section-slider-2, #section-gallery {
     background-color: var(--project-brown);
 }
 
@@ -220,6 +220,10 @@
     position: relative;
     height: 100vh;
     width: 100%;
+}
+
+.section-split-content-no--img > .overlay-container {
+    padding: 0 0 3.7em 5em;
 }
 
 .section-split-content:hover > .overlay-container > .overlay-content {
