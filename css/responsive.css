@@ -134,6 +134,10 @@
     .section-split-content {
         height: 45vh;
     }
+    
+    .cursor {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
