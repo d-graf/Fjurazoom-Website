@@ -113,6 +113,12 @@
     filter: brightness(0.7);
 }
 
+@supports (height: 100dvh) {
+    .banner>video {
+        max-height: 100dvh;
+    }
+}
+
 .gradient-overlay {
     position: absolute;
     bottom: 0;
