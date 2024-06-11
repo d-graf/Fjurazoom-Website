@@ -214,12 +214,12 @@
 
 #section-split {
     max-height: 100vh;
-    height: 100vh;
+    height: 100svh;
 }
 
 .section-split-content {
     position: relative;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
 }
 
