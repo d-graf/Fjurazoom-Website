@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     background-color: var(--project-brown);
     color: white;
     transition: transform 0.75s ease-in-out;
