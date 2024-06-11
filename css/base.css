@@ -35,6 +35,9 @@
     max-width: 100vw;
     min-height: 100svh;
     overflow-x: hidden;
+    position: relative;
+    margin-top: 0;
+    top: 0;
   }
   
   h1, h2 {
