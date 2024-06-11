@@ -16,6 +16,7 @@
     justify-content: center;
     width: 100vw;
     height: 100svh;
+    max-height: 100svh;
     background-color: var(--project-brown);
     color: white;
     transition: transform 0.75s ease-in-out;
@@ -99,6 +100,7 @@
 .banner {
     width: 100%;
     height: 100svh;
+    max-height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +120,7 @@
     left: 0;
     width: 100%;
     height: 45svh;
+    max-height: 45svh;
     background: linear-gradient(to top, var(--project-brown-light), transparent);
 }
 
