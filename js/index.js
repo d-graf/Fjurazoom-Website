@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to check if the device is mobile
     function isMobile() {
-        return window.innerWidth <= 768; // Adjust this value if necessary
+        return window.innerWidth <= 768;
     }
 
     // Add the event listeners only if the device is not mobile
@@ -104,13 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const options = {
-	keyboard: true,
-	size: 'fullscreen'
-};
-
-document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
-	e.preventDefault();
-	const lightbox = new Lightbox(el, options);
-	lightbox.show();
-}));
+lightbox.option({
+    'fitImagesInViewport': true,
+})

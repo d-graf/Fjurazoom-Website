@@ -1,3 +1,10 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { 
+      "source": "/galerie-new-york",
+      "destination": "https://www.picdrop.com/fjurazoom/zXjPy3okHt", 
+      "permanent": true
+    }
+  ]
 }

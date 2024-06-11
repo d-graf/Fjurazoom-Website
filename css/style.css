@@ -106,7 +106,7 @@
 
 .banner>video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     filter: brightness(0.7);
 }
@@ -279,4 +279,21 @@
 .gallery-content div img {
     width: 100%;
     transition: all 0.25s ease-in-out;
+}
+
+footer {
+    font-size: 0.9em;
+    background: var(--project-brown-dark);
+    color: white;
+    padding: 4em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-bottom: 0;
 }

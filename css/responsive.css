@@ -1,10 +1,6 @@
 @media (max-width: 1400px) {}
 
 @media (max-width: 1200px) {
-    .header-section > h2 {
-        font-size: 2em;
-    }
-
     :root {
         font-size: 17px;
     }
@@ -41,10 +37,12 @@
 
     h2 {
         font-size: 2.2em;
+        margin-bottom: 0.75em;
     }
 
     h3 {
         font-size: 3.1em;
+        margin-bottom: 0.25em;
     }
 
     .container-content {
@@ -60,7 +58,6 @@
     }
 
     .header-section {
-        height: auto;
         padding: 2em 1em 0 1em;
     }
 
@@ -77,10 +74,6 @@
     #section-split {
         max-height: none;
         height: auto;
-    }
-
-    .row > [class*="col"] + [class*="col"] {
-        padding-top: 2em;
     }
 
     .overlay-container {
@@ -121,6 +114,26 @@
     .container-content {
         font-size: 17px;
     }
+
+    .row > [class*="col"] + [class*="col"] {
+        padding-top: 1em !important;
+    }
+
+    .container > .row + .row {
+        padding-top: 2em !important;
+    }
+
+    #section-split .row > [class*="col"] + [class*="col"] {
+        padding-top: 0 !important;
+    }
+
+    .header-section > h2 {
+        font-size: 2.25em;
+    }
+
+    .section-split-content {
+        height: 45vh;
+    }
 }
 
 @media (max-width: 576px) {
@@ -157,5 +170,22 @@
 
     .header-section {
         padding: 2em 1.5em 0 1.5em;
+    }
+
+    .banner > .title {
+        font-size: 8vw;
+    }
+
+    #section-slider > .container-fluid {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .overlay-container {
+        padding: 0 0 4em 2em;
+    }
+
+    .section-split-content-no--img > .overlay-container {
+        padding: 0 0 3.7em 2em;
     }
 }
