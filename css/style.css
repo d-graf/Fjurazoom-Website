@@ -1,6 +1,7 @@
 .header {
     visibility: hidden;
     max-height: 0;
+    height: 0;
 }
 
 .navigation {
