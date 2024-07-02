@@ -138,6 +138,17 @@
     .cursor {
         display: none;
     }
+
+    .img-container {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .order-second {
+        order: 1;
+    }
 }
 
 @media (max-width: 576px) {
