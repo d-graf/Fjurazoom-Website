@@ -19,6 +19,7 @@
   :root {
       font-size: 18px;
       --project-brown: #aa8d72;
+      /*--project-brown: #95a69a;*/
       --project-brown-light: #ede6d9;
       --project-brown-dark: #401f00;
   }
