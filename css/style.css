@@ -345,3 +345,51 @@ footer {
 .footer-content p {
     margin-bottom: 0;
 }
+
+.section-infos-process {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.step-circle {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: #aa8d72;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 1em;
+    flex-shrink: 0;
+    font-family: 'Licorice', 'cursive';
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.section-infos-process--step-1 {
+    background-color: #aa8d72;
+}
+
+.section-infos-process--step-2 {
+    background-color: #aa8d72;
+}
+
+.section-infos-process--step-3 {
+    background-color: #aa8d72;
+}
+
+.section-infos-process--step-4 {
+    background-color: #401f00;
+}
+
+.section-infos-process div h5 {
+    margin: 0;
+}
+
+.section-infos-process div p {
+    margin: 0.5em 0 0 0;
+}

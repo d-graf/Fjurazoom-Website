@@ -45,7 +45,7 @@
     font-family: 'Tan Pearl';
   }
 
-  h1, h2, h3, h4 {
+  h1, h2, h4 {
     margin-bottom: 0.75em;
   }
   
@@ -63,6 +63,7 @@
     font-family: 'Licorice', 'cursive';
     font-size: 3.5em;
     line-height: 1;
+    margin-bottom: 0.5em;
   }
   
   p {
