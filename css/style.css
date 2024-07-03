@@ -121,6 +121,14 @@
     filter: brightness(0.7);
 }
 
+.banner>img {
+    width: 100%;
+    height: 100svh;
+    max-height: 100svh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
 .gradient-overlay {
     position: absolute;
     bottom: 0;
@@ -137,9 +145,11 @@
     font-weight: bold;
     color: white;
     position: absolute;
+    text-align: center;
 }
 
 .header-section {
+    background-color: var(--project-brown-light);
     height: 9.375em;
     display: flex;
     justify-content: center;
@@ -151,6 +161,7 @@
     font-size: 2.5em;
     margin: 0;
     color: var(--project-brown-dark);
+    text-align: center;
 }
 
 .header-section--gallery {
@@ -250,14 +261,14 @@
 	}
 }
 
-/* Section backgrounds */
+/* Section backgrounds 
 #section-intro, #section-slider, #section-agb, #section-infos {
     background-color: var(--project-brown-light);
 }
 
 #section-about, #section-slider-2, #section-gallery {
     background-color: var(--project-brown);
-}
+}*/
 
 #section-split {
     max-height: 100vh;
@@ -331,7 +342,7 @@
 
 footer {
     font-size: 0.9em;
-    background: var(--project-brown-dark);
+    background: var(--project-brown);
     color: white;
     padding: 4em 0;
 }
@@ -370,6 +381,21 @@ footer {
     line-height: 1;
 }
 
+#section-infos .button {
+    background-color: var(--project-brown);
+    color: white;
+}
+
+#section-infos .button:hover {
+    color: var(--project-brown-dark);
+    background-color: var(--project-brown-light);
+    border: 1px solid var(--project-brown-dark);
+}
+
+/*.section-infos-content {
+    margin-top: 4em;
+}*/
+
 .section-infos-process--step-1 {
     background-color: #aa8d72;
 }
@@ -392,4 +418,44 @@ footer {
 
 .section-infos-process div p {
     margin: 0.5em 0 0 0;
+}
+
+.section-gallery-item {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 0px 0px var(--project-brown);
+    box-shadow: 10px 10px 0px 0px var(--project-brown);
+    transition: box-shadow ease 0.25s;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-gallery-item:hover::before {
+    content: 'Coupleshooting Thunersee';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Licorice', 'cursive';
+    font-size: 2.5em;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 141, 114, 0.5);
+}
+
+.section-gallery-item:hover {
+    -webkit-box-shadow: 0px var(--project-brown);
+    box-shadow: 0px var(--project-brown);
+}
+
+.section-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-gallery-row:nth-child(2) {
+    margin-top: 0;
 }

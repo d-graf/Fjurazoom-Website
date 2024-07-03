@@ -10,53 +10,6 @@ jQuery(document).ready(function () {
         jQuery("#hamburger-checkbox").prop("checked", false);
     });
 
-    // slider instagram
-    var splide = new Splide('.splide', {
-        type: 'loop',
-        perPage: 4,
-        perMove: 1,
-        fixedHeight: 500,
-        gap: '3em',
-        lazyLoad: 'nearby',
-        cover: 1,
-        pagination: false,
-        breakpoints: {
-            1400: {
-                perPage: 3,
-            },
-            1024: {
-                perPage: 2,
-            },
-            768: {
-                perPage: 1,
-            },
-        }
-    });
-    splide.mount();
-
-    /*var splide = new Splide('.splide-second', {
-        type: 'loop',
-        perPage: 4,
-        perMove: 1,
-        fixedHeight: 500,
-        gap: '3em',
-        lazyLoad: 'nearby',
-        cover: 1,
-        pagination: false,
-        breakpoints: {
-            1400: {
-                perPage: 3,
-            },
-            1024: {
-                perPage: 2,
-            },
-            768: {
-                perPage: 1,
-            },
-        }
-    });
-    splide.mount();*/
-
     jQuery(window).scroll(function () {
         if (jQuery(document).scrollTop() > 100) {
             jQuery('.mouse').fadeOut('slow');
@@ -65,6 +18,9 @@ jQuery(document).ready(function () {
         }
     });
 
+    lightbox.option({
+        'fitImagesInViewport': true,
+    });
     
 });
 
@@ -103,7 +59,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-lightbox.option({
-    'fitImagesInViewport': true,
-})
