@@ -420,6 +420,10 @@ footer {
     margin: 0.5em 0 0 0;
 }
 
+#section-gallery .button {
+    margin: 2em auto 0 auto;   
+}
+
 .section-gallery-item {
     width: 100%;
     height: 400px;
@@ -432,13 +436,7 @@ footer {
 }
 
 .section-gallery-item:hover::before {
-    content: 'Coupleshooting Thunersee';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Licorice', 'cursive';
-    font-size: 2.5em;
-    color: white;
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -448,6 +446,24 @@ footer {
 .section-gallery-item:hover {
     -webkit-box-shadow: 0px var(--project-brown);
     box-shadow: 0px var(--project-brown);
+}
+
+.section-gallery-item--text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Licorice', 'cursive';
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+
+.section-gallery-item:hover .section-gallery-item--text {
+    display: flex;
 }
 
 .section-gallery-item img {

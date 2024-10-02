@@ -205,16 +205,18 @@
     }
 
     .section-gallery-item::before {
-        content: 'Coupleshooting Thunersee';
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Licorice', 'cursive';
-        font-size: 2.5em;
-        color: white;
+        content: '';
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(170, 141, 114, 0.5);
+    }
+
+    .section-gallery-item--text {
+        display: flex;
+    }
+
+    .section-infos-process div p {
+        font-size: 14px;
     }
 }
